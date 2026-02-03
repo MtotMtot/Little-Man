@@ -82,6 +82,9 @@ jobs:
     steps:
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
         
       - name: Deploy to GitHub Pages 🚀
         if: github.event_name == 'push'  # deploy only on push
